@@ -1,9 +1,11 @@
-FROM registry.cn-hangzhou.aliyuncs.com/livenowhy/node:alpine
+FROM registry.cn-hangzhou.aliyuncs.com/livenowhy/node:vue
 
-RUN mkdir /src
+
 ADD . /src
-WORKDIR /src/dist
+WORKDIR /src
+CMD cd /src
+CMD chmod a+x /src/start.sh
 
-EXPOSE 3000
+EXPOSE 8080
 
-CMD ["node", "server.js"]
+CMD ["./start.sh"]
