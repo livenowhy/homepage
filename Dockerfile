@@ -8,4 +8,4 @@ CMD chmod a+x /src/start.sh
 
 EXPOSE 8080
 
-CMD ["./start.sh"]
+CMD ["/src/start.sh"]
