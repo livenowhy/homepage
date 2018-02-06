@@ -17,7 +17,7 @@ clean:
 
 
 restart: stop
-	docker run -itd --name=${CNAME} -p 80:8080 ${PREFIX}/${IMAGE_NAME}:${TAG}
+	docker run -itd --name=${CNAME} -p 8800:8080 ${PREFIX}/${IMAGE_NAME}:${TAG}
 
 
 stop:
